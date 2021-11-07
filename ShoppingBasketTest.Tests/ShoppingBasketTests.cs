@@ -3,9 +3,7 @@ using Moq;
 using ShoppingBasketTest.Discounts;
 using ShoppingBasketTest.Interfaces;
 using ShoppingBasketTest.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace ShoppingBasketTest.Tests
