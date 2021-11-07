@@ -4,7 +4,13 @@ namespace ShoppingBasketTest.Models
 {
     public class DiscountResult
     {
-        public List<ShoppingBasketItem> Items { get; set; } = new List<ShoppingBasketItem>();
-        public int Amount { get; set; }
+        public DiscountResult(int amount, IEnumerable<ShoppingBasketItem> items)
+        {
+            Amount = amount;
+            Items = items;
+        }
+
+        public IEnumerable<ShoppingBasketItem> Items { get; }
+        public int Amount { get; }
     }
 }
