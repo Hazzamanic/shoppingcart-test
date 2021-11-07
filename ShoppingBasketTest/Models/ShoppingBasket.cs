@@ -50,7 +50,7 @@ namespace ShoppingBasketTest.Models
                 foreach (var discount in discounts)
                 {
                     // try to apply the discount
-                    if(discount.TryApplyDiscount(items, out var result))
+                    if(discount.TryApplyDiscount(items.ToList(), out var result))
                     {
                         discountResults.Add(result);
                     }
